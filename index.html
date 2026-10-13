@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="A responsive, accessible and performance-focused frontend development project."
+  >
+  <meta name="theme-color" content="#0b1220">
+
+  <title>AccessFlow | Accessible Web Experiences</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="AccessFlow home">
+        <span class="logo-mark" aria-hidden="true">A</span>
+        AccessFlow
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        class="navigation"
+        id="primary-navigation"
+        aria-label="Main navigation"
+      >
+        <a href="#features">Features</a>
+        <a href="#process">Our Process</a>
+        <a href="#audit">Lighthouse Audit</a>
+        <a class="nav-cta" href="#audit">View Goals</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">BETTER WEB. BETTER EXPERIENCE.</p>
+
+          <h1>
+            Build websites that are
+            <span>fast, accessible, and inclusive.</span>
+          </h1>
+
+          <p class="hero-description">
+            A frontend demonstration project focused on web accessibility,
+            loading performance, responsive design, and a better experience
+            for every user.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#features">
+              Explore Features
+            </a>
+            <a class="button button-secondary" href="#audit">
+              Audit Goals
+            </a>
+          </div>
+
+          <div class="trust-line">
+            <span class="status-dot" aria-hidden="true"></span>
+            Built with semantic HTML, CSS, and JavaScript
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-glow"></div>
+
+          <div class="dashboard">
+            <div class="dashboard-top">
+              <span class="window-dots">
+                <i></i><i></i><i></i>
+              </span>
+              <span>WEB QUALITY REPORT</span>
+            </div>
+
+            <div class="score-panel">
+              <div class="score-ring">
+                <div class="score-ring-inner">
+                  <span class="score-number">90+</span>
+                  <span class="score-label">GOAL</span>
+                </div>
+              </div>
+
+              <div>
+                <h2>Quality first</h2>
+                <p>Performance & accessibility</p>
+              </div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-heading">
+                <span>Performance</span>
+                <span>Optimize</span>
+              </div>
+              <div class="metric-track">
+                <span class="metric-fill performance-fill"></span>
+              </div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-heading">
+                <span>Accessibility</span>
+                <span>Inclusive</span>
+              </div>
+              <div class="metric-track">
+                <span class="metric-fill accessibility-fill"></span>
+              </div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-heading">
+                <span>Responsive design</span>
+                <span>All screens</span>
+              </div>
+              <div class="metric-track">
+                <span class="metric-fill responsive-fill"></span>
+              </div>
+            </div>
+
+            <p class="dashboard-note">
+              Illustrative goals, not measured audit scores.
+            </p>
+          </div>
+
+          <div class="floating-badge badge-top">
+            <span aria-hidden="true">✓</span> Keyboard friendly
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <span aria-hidden="true">⚡</span> Lightweight UI
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT WE FOCUS ON</p>
+          <h2>A better experience for everyone</h2>
+          <p>
+            Good frontend development combines usability, accessibility,
+            performance, and maintainable code.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">♿</div>
+            <h3>Accessibility</h3>
+            <p>
+              Semantic elements, visible focus states, keyboard navigation,
+              readable contrast, and accessible controls.
+            </p>
+            <a href="#audit">Explore audit goals →</a>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <h3>Performance</h3>
+            <p>
+              Lightweight assets, minimal JavaScript, efficient CSS,
+              and fewer unnecessary network requests.
+            </p>
+            <a href="#process">Explore our process →</a>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">▣</div>
+            <h3>Responsive design</h3>
+            <p>
+              Flexible layouts, readable text, and usable navigation
+              across mobile, tablet, and desktop screens.
+            </p>
+            <a href="#process">See the workflow →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container process-grid">
+        <div class="process-intro">
+          <p class="eyebrow">THE WORKFLOW</p>
+          <h2>Measure. Improve. Measure again.</h2>
+          <p>
+            Performance optimization should be based on evidence.
+            Run an initial audit, fix the highest-impact issues,
+            and compare results under similar conditions.
+          </p>
+          <a
+            class="text-link"
+            href="https://developer.chrome.com/docs/lighthouse/overview/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read Lighthouse documentation ↗
+          </a>
+        </div>
+
+        <ol class="process-list">
+          <li>
+            <span class="step-number">01</span>
+            <div>
+              <h3>Audit the website</h3>
+              <p>Record baseline scores and identify warnings.</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">02</span>
+            <div>
+              <h3>Fix accessibility issues</h3>
+              <p>Check labels, contrast, keyboard use, and semantics.</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">03</span>
+            <div>
+              <h3>Optimize performance</h3>
+              <p>Reduce unnecessary resources and improve rendering.</p>
+            </div>
+          </li>
+
+          <li>
+            <span class="step-number">04</span>
+            <div>
+              <h3>Re-test and document</h3>
+              <p>Compare the results and share real audit evidence.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section audit-section" id="audit">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">LIGHTHOUSE AUDIT</p>
+          <h2>Our quality targets</h2>
+          <p>
+            Aim for strong Lighthouse scores, then verify the results
+            using actual audits of the deployed website.
+          </p>
+        </div>
+
+        <div class="audit-grid">
+          <article class="audit-card">
+            <span class="audit-symbol" aria-hidden="true">⚡</span>
+            <h3>Performance</h3>
+            <p class="target-score">90–100</p>
+            <p>Target range for the Lighthouse performance score.</p>
+          </article>
+
+          <article class="audit-card">
+            <span class="audit-symbol" aria-hidden="true">✓</span>
+            <h3>Accessibility</h3>
+            <p class="target-score">90–100</p>
+            <p>Target range for the Lighthouse accessibility score.</p>
+          </article>
+
+          <article class="audit-card">
+            <span class="audit-symbol" aria-hidden="true">◇</span>
+            <h3>Best Practices</h3>
+            <p class="target-score">90–100</p>
+            <p>Target range for the Lighthouse best practices score.</p>
+          </article>
+
+          <article class="audit-card">
+            <span class="audit-symbol" aria-hidden="true">⌕</span>
+            <h3>SEO</h3>
+            <p class="target-score">90–100</p>
+            <p>Target range for the Lighthouse SEO score.</p>
+          </article>
+        </div>
+
+        <p class="audit-disclaimer">
+          These are goals, not actual results. Your scores may vary
+          depending on the browser, device, hosting, and audit conditions.
+        </p>
+
+        <div class="audit-cta">
+          <div>
+            <h3>Ready to run your audit?</h3>
+            <p>Test your deployed page with Google PageSpeed Insights.</p>
+          </div>
+          <a
+            class="button button-primary"
+            href="https://pagespeed.web.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Run Lighthouse Audit ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closing-section">
+      <div class="container closing-content">
+        <p class="eyebrow">BUILD WITH PURPOSE</p>
+        <h2>Accessible by design. Faster by default.</h2>
+        <p>
+          A small frontend project demonstrating practical web
+          development principles that can make a meaningful difference.
+        </p>
+        <a class="button button-primary" href="#home">
+          Back to Top ↑
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo footer-logo" href="#home">AccessFlow</a>
+      <p>
+        Built as a frontend accessibility and performance project.
+      </p>
+      <p>© <span id="current-year">2026</span> AccessFlow</p>
+    </div>
+  </footer>
+
+  <p
+    class="sr-only"
+    id="menu-status"
+    aria-live="polite"
+  ></p>
+</body>
+</html>
